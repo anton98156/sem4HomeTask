@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Пример страницы с Thymeleaf</title>
+</head>
+<body>
+    <h1 th:text="${pageTitle}">Заголовок</h1>
+    <p th:text="${message}">Сообщение</p>
+
+    <form action="#" th:action="@{/submitForm}" method="post">
+        <label for="name">Имя:</label>
+        <input type="text" id="name" name="name" required>
+        <button type="submit">Отправить</button>
+    </form>
+</body>
+</html>
